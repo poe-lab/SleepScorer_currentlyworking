@@ -1,0 +1,11 @@
+grp1 = [50,43,45,56] 
+grp2 = [65,67,50,81,83,90] 
+grp3 = [43,77,66,84,94,54,67] 
+grpn = [size(grp1,2);size(grp2,2);size(grp3,2)] 
+grpmean = [mean(grp1);mean(grp2);mean(grp3)] 
+grpstd = [std(grp1);std(grp2);std(grp3)] 
+grps = [grp1,grp2,grp3]; 
+[alln, allmean, allstd] = overallmeanstd(grpn, grpmean, grpstd) 
+n_ = size(grps,2) 
+mean_ = mean(grps) 
+std_ = std(grps)
